@@ -19,6 +19,10 @@ class UserActivityApi(APIView):
         return Response(result.data)
     
     def post(self, request):
-        data = request.data
-        return Response(data)
-    
+        json = request.data
+        serializer = UserDataSerializer(data=json)
+        # print(serializer)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer)
+        return Response("Data Not Validated!")
