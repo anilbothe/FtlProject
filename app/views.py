@@ -19,9 +19,7 @@ class UserActivityApi(APIView):
         return Response(result.data)
     
     def post(self, request):
-        json = request.data
-        serializer = UserDataSerializer(data=json)
-        # print(serializer)
+        serializer = UserDataSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer)
