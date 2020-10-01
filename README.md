@@ -1,6 +1,6 @@
 # Backend Test - FullThrottle Labs
   
-  - This project is hosted on Pythonanywhere [Link](http://digitute.pythonanywhere.com/) 
+  - This project is hosted on Pythonanywhere ->  [Link](http://digitute.pythonanywhere.com/) 
   - Just download and install packages from requirement.txt
   - And Run project :)
 
